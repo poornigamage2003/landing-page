@@ -19,14 +19,10 @@
 
 ## 📸 Screenshots
 
-Placeholder previews for key viewports (actual screenshots can be placed in `/public/screenshots/`):
-
 | Desktop View (1280px+) | Tablet View (768px) | Mobile View (375px) |
 | :---: | :---: | :---: |
-| ![Desktop Screenshot Placeholder](/screenshots/desktop.png) | ![Tablet Screenshot Placeholder](/screenshots/tablet.png) | ![Mobile Screenshot Placeholder](/screenshots/mobile.png) |
+| <img src="/public/screenshots/desktop.png" width="400" alt="Desktop View"> | <img src="/public/screenshots/tablet.png" width="250" alt="Tablet View"> | <img src="/public/screenshots/mobile.png" width="180" alt="Mobile View"> |
 | *Full 3-col Kanban mockup, metrics, 6-col logo cloud, expanded nav* | *Collapsed clean navigation, 2-col grids, responsive cards* | *Single-column stack, mobile hamburger drawer, touch-friendly CTAs* |
-
----
 
 ## 📱 Responsive Behavior
 
