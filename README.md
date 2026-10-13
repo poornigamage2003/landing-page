@@ -12,15 +12,14 @@
 
 ## 🔗 Live Demo
 
-- **Production URL:** [https://flowdesk-landing-page.vercel.app](https://flowdesk-landing-page.vercel.app)
-- **Note:** *Live deployment URL configured for Vercel deployment; manual verification and DNS binding to be confirmed upon final Vercel release.*
+- **Production URL:** <PASTE_NEW_VERCEL_URL_HERE>
 - **GitHub Repository:** [https://github.com/poornigamage2003/landing-page](https://github.com/poornigamage2003/landing-page)
 
 ---
 
 ## 📸 Screenshots
 
-Placeholder previews for key viewports (actual screenshots can be placed in [`/public/screenshots/`](file:///c:/Users/achii/my-landing-page/public/screenshots/)):
+Placeholder previews for key viewports (actual screenshots can be placed in `/public/screenshots/`):
 
 | Desktop View (1280px+) | Tablet View (768px) | Mobile View (375px) |
 | :---: | :---: | :---: |
@@ -129,7 +128,7 @@ my-landing-page/
 - **Design Tokens:** Declared in `globals.css` via `@theme inline` and custom properties (`--primary`, `--accent`, `--neutral-*`).
 
 ### 2. Typography & Hierarchy
-- Powered by `Geist Sans` with clear visual hierarchy:
+- Powered by `Geist Sans` & `Geist Mono` (via `next/font/google` in `app/layout.tsx`) with clear visual hierarchy:
   - Hero Display: `text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight`
   - Section Headings: `text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight`
   - Subheadings & Body: `text-base sm:text-lg text-slate-600 dark:text-slate-400`
@@ -192,7 +191,7 @@ This project is optimized for deployment on the **Vercel** platform:
 2. Framework preset: **Next.js**.
 3. Build command: `npm run build` (Turbopack builds will compile automatically).
 4. Output directory: `.next`.
-5. Ensure domain [https://flowdesk-landing-page.vercel.app](https://flowdesk-landing-page.vercel.app) is assigned under Project Settings > Domains.
+5. Ensure domain <PASTE_NEW_VERCEL_URL_HERE> is assigned under Project Settings > Domains.
 
 ---
 
