@@ -3,11 +3,25 @@
 :root {
   --background: #ffffff;
   --foreground: #0f172a;
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --primary-light: #eef2ff;
+  --accent: #7c3aed;
+  --neutral-dark: #0f172a;
+  --neutral-muted: #64748b;
+  --neutral-border: #e2e8f0;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
+  --color-accent: var(--accent);
+  --color-neutral-dark: var(--neutral-dark);
+  --color-neutral-muted: var(--neutral-muted);
+  --color-neutral-border: var(--neutral-border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -16,6 +30,8 @@
   :root {
     --background: #090d16;
     --foreground: #f8fafc;
+    --neutral-border: #1e293b;
+    --neutral-muted: #94a3b8;
   }
 }
 
@@ -30,7 +46,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Subtle glow animations */
+/* Subtle animation tokens */
 @keyframes pulse-slow {
   0%, 100% {
     opacity: 0.4;
@@ -42,6 +58,19 @@ body {
   }
 }
 
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
 .animate-pulse-slow {
   animation: pulse-slow 8s ease-in-out infinite;
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 4s ease-in-out infinite;
 }

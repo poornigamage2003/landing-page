@@ -103,7 +103,7 @@ export const Navbar: React.FC = () => {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-1 lg:gap-2" aria-label="Main Navigation">
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-2" aria-label="Main Navigation">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.label}
@@ -116,7 +116,7 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Desktop CTAs */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-3">
             <Button variant="ghost" size="sm" href="#pricing">
               Sign In
             </Button>
@@ -130,8 +130,8 @@ export const Navbar: React.FC = () => {
             </Button>
           </div>
 
-          {/* Mobile Hamburger Button */}
-          <div className="flex md:hidden items-center gap-2">
+          {/* Mobile & Tablet Hamburger Button */}
+          <div className="flex lg:hidden items-center gap-2">
             <Button
               variant="primary"
               size="sm"
@@ -155,7 +155,7 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer/Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-x-0 top-18 bottom-0 z-40 bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl md:hidden overflow-y-auto border-t border-slate-200/80 dark:border-slate-800/80 flex flex-col p-6 animate-in fade-in slide-in-from-top-4 duration-200">
+        <div className="fixed inset-x-0 top-18 bottom-0 z-40 bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl lg:hidden overflow-y-auto border-t border-slate-200/80 dark:border-slate-800/80 flex flex-col p-6 animate-in fade-in slide-in-from-top-4 duration-200">
           <div className="flex items-center justify-between pb-4 mb-2 border-b border-slate-200 dark:border-slate-800 text-xs font-semibold uppercase tracking-wider text-slate-400">
             <span>Navigation Menu</span>
             <span className="flex items-center gap-1 text-indigo-600 dark:text-indigo-400 font-medium">

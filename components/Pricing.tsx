@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "./ui/Container";
 import { SectionHeading } from "./ui/SectionHeading";
+import { Card } from "./ui/Card";
 import { Button } from "./ui/Button";
 import { Check, Sparkles, Shield, ArrowRight } from "lucide-react";
 
@@ -23,7 +24,7 @@ export interface PricingCardProps {
 
 export const PricingCard: React.FC<PricingCardProps> = ({ plan }) => {
   return (
-    <div
+    <Card
       className={`relative rounded-2xl flex flex-col justify-between p-8 sm:p-9 transition-all duration-300 ${
         plan.highlighted
           ? "bg-white dark:bg-slate-900 border-2 border-indigo-600 dark:border-indigo-500 shadow-2xl shadow-indigo-600/15 lg:-translate-y-2 z-10"
@@ -108,7 +109,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({ plan }) => {
           {plan.highlighted ? "14-day free trial • Cancel anytime" : "Instant access"}
         </span>
       </div>
-    </div>
+    </Card>
   );
 };
 
